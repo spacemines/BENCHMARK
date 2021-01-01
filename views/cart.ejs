@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BENCHMARK</title>
+</head>
+<body>
+  <% for (let [key, value] of cart) {%>
+  <li class="cart">
+    <span><%= key %></span>
+    <span><%= value %></span>
+    <form action = "/items/remove" method="POST">
+      <button type="remove">Remove</button>
+    </form>
+  </li> 
+</body>
+</html>
+
